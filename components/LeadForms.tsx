@@ -32,21 +32,21 @@ export function LeadForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md">
+        <form onSubmit={handleSubmit(onSubmit)} className="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-md min-h-[500px] border border-gray-100">
             <div className="space-y-4">
                 <div>
                     <label className="text-sm text-gray-600">Nome:</label>
-                    <input {...register("name")} className="w-full border p-3 rounded-lg" placeholder="Seu nome" />
+                    <input {...register("name")} className="w-full border p-3 rounded-lg placeholder-gray-500" placeholder="Seu nome" />
                     {errors.name && <span className="text-red-500 text-xs">{errors.name.message}</span>}
                 </div>
                 <div>
                     <label className="text-sm text-gray-600">E-mail:</label>
-                    <input {...register("email")} className="w-full border p-3 rounded-lg" placeholder="Seu e-mail" />
+                    <input {...register("email")} className="w-full border p-3 rounded-lg placeholder-gray-500" placeholder="Seu e-mail" />
                     {errors.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
                 </div>
                 <div>
                     <label className="text-sm text-gray-600">Telefone:</label>
-                    <input {...register("phone")} className="w-full border p-3 rounded-lg" placeholder="Seu telefone" />
+                    <input {...register("phone")} className="w-full border p-3 rounded-lg placeholder-gray-500" placeholder="Seu telefone" />
                     {errors.phone && <span className="text-red-500 text-xs">{errors.phone.message}</span>}
                 </div>
 
