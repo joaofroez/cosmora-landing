@@ -36,17 +36,18 @@ export function LeadForm() {
             <div className="space-y-4">
                 <div>
                     <label className="text-sm text-gray-600">Nome:</label>
-                    <input {...register("name")} className="w-full border p-3 rounded-lg placeholder-gray-500" placeholder="Seu nome" />
+                    <input {...register("name")} className="w-full bg-white border border-gray-300 p-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600" 
+        placeholder="Seu nome" />
                     {errors.name && <span className="text-red-500 text-xs">{errors.name.message}</span>}
                 </div>
                 <div>
                     <label className="text-sm text-gray-600">E-mail:</label>
-                    <input {...register("email")} className="w-full border p-3 rounded-lg placeholder-gray-500" placeholder="Seu e-mail" />
+                    <input {...register("email")} className="w-full bg-white border border-gray-300 p-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600"  placeholder="Seu e-mail" />
                     {errors.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
                 </div>
                 <div>
                     <label className="text-sm text-gray-600">Telefone:</label>
-                    <input {...register("phone")} className="w-full border p-3 rounded-lg placeholder-gray-500" placeholder="Seu telefone" />
+                    <input {...register("phone")} className="w-full bg-white border border-gray-300 p-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600"  placeholder="Seu telefone" />
                     {errors.phone && <span className="text-red-500 text-xs">{errors.phone.message}</span>}
                 </div>
 

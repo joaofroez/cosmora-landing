@@ -1,6 +1,7 @@
 import { Cpu, Rocket, ShieldCheck, BarChart3 } from "lucide-react"; // Instale: npm i lucide-react
 import { SolutionCard } from "@/components/SolutionCardProps";
 import { LeadForm } from "@/components/LeadForms";
+import { CustomizationBanner } from "@/components/BannerPersonalizado";
 // import { LeadForm } from "@/components/LeadForm"; // Dev B fará isso depois
 
 export default function Home() {
@@ -12,8 +13,7 @@ export default function Home() {
         {/* Coluna da Esquerda: Texto e Logo */}
         <div className="flex-1 space-y-8 text-center lg:text-left">
           {/* Logo Improvisado (SVG ou Imagem viria aqui) */}
-          <div className="flex items-center justify-center lg:justify-start gap-2 text-3xl font-bold text-brand-purple">
-            <div className="relative w-10 h-10">
+<div className="flex items-center justify-center lg:justify-start gap-2 text-3xl font-bold text-[#1A1A1A]">            <div className="relative w-10 h-10">
               <Cpu className="w-10 h-10 text-brand-gold" /> {/* Ícone simulando o logo */}
             </div>
             <span>Cosmora <span className="text-brand-gold">Tech</span></span>
@@ -58,6 +58,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <CustomizationBanner>
+        
+      </CustomizationBanner>
+    
 
       {/* --- FOOTER (Tarefa Extra do Dev A) --- */}
       <footer className="bg-brand-dark text-white py-8 text-center">
