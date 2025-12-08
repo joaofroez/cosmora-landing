@@ -2,7 +2,7 @@ import { Cpu, Rocket, ShieldCheck, BarChart3 } from "lucide-react"; // Instale: 
 import { SolutionCard } from "@/components/SolutionCardProps";
 import { LeadForm } from "@/components/LeadForms";
 import Image from "next/image";
-// import { LeadForm } from "@/components/LeadForm"; // Dev B fará isso depois
+
 
 export default function Home() {
   return (
@@ -12,7 +12,6 @@ export default function Home() {
         
         {/* Coluna da Esquerda: Texto e Logo */}
         <div className="flex-1 space-y-8 text-center lg:text-left">
-          {/* Logo Improvisado (SVG ou Imagem viria aqui) */}
           {/* Logo Nova com Imagem */}
           <div className="flex items-center justify-center lg:justify-start mb-6">
            <Image 
@@ -83,7 +82,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Botão: Dourado com texto preto (Alto Contraste) */}
           <button className="cursor-pointer bg-[#7B61FF] hover:bg-[#6243FF] text-[#1A1A1A] text-white font-bold py-4 px-12 rounded-full text-lg shadow-lg shadow-white-500/20 transform hover:-translate-y-1 transition-all duration-300">
             Fale com Nossa Equipe
           </button>
@@ -179,7 +177,7 @@ export default function Home() {
 
         </div>
       </section>
-      {/* --- FOOTER (Tarefa Extra do Dev A) --- */}
+      {/* --- FOOTER --- */}
       <footer className="bg-brand-dark text-gray-300 py-8 text-center">
         <p className="text-gray-300">
           © {new Date().getFullYear()} Cosmora Tech. Todos os direitos reservados.
