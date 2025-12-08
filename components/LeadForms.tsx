@@ -61,7 +61,7 @@ export function LeadForm() {
 
                 <button
                     disabled={isSubmitting}
-                    className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-lg transition-colors disabled:opacity-50"
+                    className=" cursor-pointer w-full bg-[#7B61FF] hover:bg-[#6243FF] text-white font-bold py-3 rounded-lg transition-colors disabled:opacity-50"
                 >
                     {isSubmitting ? "Enviando..." : "Entrar em contato"}
                 </button>
